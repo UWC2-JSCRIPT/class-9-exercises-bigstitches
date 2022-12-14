@@ -20,14 +20,24 @@ console.log(counter.getCount());
 // - addMessage method that adds a message to the array
 // - getMessage(index) method that returns the message at index index
 
-const createMessageHolder = () => {};
+const createMessageHolder = () => {
+  let message = [];
+  const addMessage = (input) => message.push(input);
+  const getMessage = (index) => message[index];
+  return {
+    addMessage,
+    getMessage
+  };
+};
 
 // Test
+
 const messageHolder = createMessageHolder();
 messageHolder.addMessage('Hello!');
 messageHolder.addMessage('Goodbye!');
 console.log(messageHolder.getMessage(0));
 // "Hello!""
+console.log(messageHolder.getMessage(1));
 
 // Example: non-currying
 const addNumbers = function(num1, num2) {
@@ -55,7 +65,10 @@ console.log(addThree(41));
 // This will return a function a function greet
 // - This accepts a single argument, name (i.e. "Matt")
 // - This function should return the greeting combined with the name, (i.e. "Hello Matt")
-const createGreeting = function(greeting) {};
+const createGreeting = function(greeting) {
+  const greet = (name) => `${greeting} ${name}`;
+  return greet;
+};
 
 // Test
 const welcomeGreet = createGreeting('Welcome');
