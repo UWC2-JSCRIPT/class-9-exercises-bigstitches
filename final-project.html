@@ -10,16 +10,20 @@
   </head>
 
   <body>
-    <h1>Closures</h1>
+    <h1>Pong Recipe!</h1>
+    <h2>Use 'a' and 'z' to operate the left table</h2>
+    <h2>Use 'l' and 'm' to operate the right table</h2>
     <form id="play-game-form" class='visible'>
       <div class="form-group mb-2">
         <input id="play" class="btn btn-primary" type="submit" value="Play Game" />
       </div>
+      <br>
     </form>
     <form id="stop-game-form" class='invisible'>
       <div class="form-group mb-2">
         <input id="play" class="btn btn-primary" type="submit" value="Stop Game" />
       </div>
+      <br>
     </form>
     <canvas id="pong-canvas" width="600" height="440">
       
@@ -29,7 +33,12 @@
         <input id="submit" class="btn btn-submit" type="submit" value="Get Recipe" />
       </div>
     </form>
-
+    <div id="recipe-list">
+      <p>Recipes to Make Tonight:</p>
+      <!-- append recipes here -->
+    </div>
+    
+<!--
     <form id="recipe-options-veggie" class='invisible'>
       <input type="checkbox" id="veggie1" name="veggie1" value="broccoli">
       <label for="vehicle1">broccoli</label><br>
@@ -48,6 +57,7 @@
       <label for="vehicle3">pear</label><br><br>
       <input type="submit" value="Submit">
     </form>
+-->
     
     <!--<script src="closures.js"></script>-->
     <script src="ball.js"></script>

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Closures</title>
+    <title>Touch Event</title>
+    <style>
+      dot { position: absolute; display : block;
+            border: 2px solid red; border-radius: 50px;
+            height: 100px; width: 100px; }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        select,
+        textarea,
+        input {
+          font-size: 16px;
+        }
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        select:focus,
+        textarea:focus,
+        input:focus {
+          font-size: 16px;
+        }
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   </head>
 
   <body>
     <h1>Closures</h1>
-    <script src="closures.js"></script>
+    <!--<script src="closures.js"></script>-->
+    <script src="touch.js"></script>
   </body>
 </html>
