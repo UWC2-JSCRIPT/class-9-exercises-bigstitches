@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pong Recipe</title>
+    <link rel="stylesheet" href="final-project-style.css">
+    <style>
+      
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+
+  <body>
+    <h1>Closures</h1>
+    <form id="play-game-form" class='visible'>
+      <div class="form-group mb-2">
+        <input id="play" class="btn btn-primary" type="submit" value="Play Game" />
+      </div>
+    </form>
+    <form id="stop-game-form" class='invisible'>
+      <div class="form-group mb-2">
+        <input id="play" class="btn btn-primary" type="submit" value="Stop Game" />
+      </div>
+    </form>
+    <canvas id="pong-canvas" width="600" height="440">
+      
+    </canvas>
+    <form id="form-recipe-type">
+      <div class="form-group mb-2">
+        <input id="submit" class="btn btn-submit" type="submit" value="Get Recipe" />
+      </div>
+    </form>
+
+    <form id="recipe-options-veggie" class='invisible'>
+      <input type="checkbox" id="veggie1" name="veggie1" value="broccoli">
+      <label for="vehicle1">broccoli</label><br>
+      <input type="checkbox" id="veggie2" name="veggie2" value="carrot">
+      <label for="vehicle2">carrot</label><br>
+      <input type="checkbox" id="veggie3" name="veggie3" value="brussel sprout">
+      <label for="vehicle3">brussel sprout</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <form id="recipe-options-dessert" class='invisible'>
+      <input type="checkbox" id="dessert1" name="dessert1" value="apple">
+      <label for="vehicle1">apple</label><br>
+      <input type="checkbox" id="dessert2" name="dessert2" value="raspberry">
+      <label for="vehicle2">raspberry</label><br>
+      <input type="checkbox" id="dessert3" name="dessert3" value="pear">
+      <label for="vehicle3">pear</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <!--<script src="closures.js"></script>-->
+    <script src="ball.js"></script>
+    <script src="table.js"></script>
+    <script src="touch.js"></script>
+    <script src="final-project.js"></script>
+    
+  </body>
+</html>
